@@ -41,3 +41,16 @@ follow the setup guide: https://testing-library.com/docs/svelte-testing-library/
 ### added vitest-setup.ts file
 
 see file
+
+### installed node types
+
+for the following imports inside vitest.config.ts:
+
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+to avoid ts errors install the types like so:
+
+```npm install @types/node --save-dev```
+
+
