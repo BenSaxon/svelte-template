@@ -1,19 +1,3 @@
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
@@ -36,3 +20,24 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Changes made to the basic sveltekit template
+
+### lint and format commands:
+
+```shell
+"lint": "prettier --plugin-search-dir . --write . && eslint .",
+"format": "prettier --plugin-search-dir . --write .",
+```
+
+### Svelte testing library
+
+follow the setup guide: https://testing-library.com/docs/svelte-testing-library/setup
+
+### tsconfig
+
+"include": ["src", "vitest.setup.ts", ".svelte-kit/ambient.d.ts"]
+
+### added vitest-setup.ts file
+
+see file

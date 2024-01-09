@@ -11,7 +11,7 @@
 
 <section>
 	<h1>
-		<span class="welcome">
+		<span class="welcome" data-testid="welcome-span">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
 				<img src={welcome_fallback} alt="Welcome" />
