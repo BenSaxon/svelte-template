@@ -5,9 +5,9 @@ import 'vitest-dom/extend-expect'; // required for using matchers like toBeInThe
 // todo: ^ should not have to be imported, need to configure vitest.setup.ts, vitest.config.ts and tsconfig
 
 describe('home page UI', () => {
-	it('renders span', () => {
+	it('renders text', () => {
 		render(Page);
-		const span = screen.getByTestId('welcome-span');
-		expect(span).toBeVisible();
+		const text = screen.getByTestId('text');
+		expect(text).toHaveTextContent('Content');
 	});
 });

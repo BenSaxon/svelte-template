@@ -4,7 +4,7 @@
 </svelte:head>
 
 <section>
-	<p>Content</p>
+	<p data-testid="text">Content</p>
 </section>
 
 <style>
